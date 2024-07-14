@@ -1,7 +1,7 @@
 package br.com.ganog.sqswithjmsspring.portas;
 
-import io.awspring.cloud.sqs.annotation.SqsListener;
 import lombok.RequiredArgsConstructor;
+import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -10,7 +10,7 @@ public class SQSJMSConsumidor {
 
     private final SQSJMSProdutor sqsjmsProdutor;
 
-    @SqsListener(value = "teste", acknowledgementMode = "ON_SUCCESS")
+    @JmsListener(destination = "teste-envio", concurrency = "3-10")
     public void consumirMensagem(String mensagem) {
         System.out.println("Mensagem recebida: " + mensagem);
 
