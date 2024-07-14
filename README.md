@@ -1,4 +1,4 @@
-# Projeto foca em abstrair consumo e envio do SQS com JMS
+# Projeto focado em abstrair consumo e envio do SQS com JMS
 
 ## Installation
 
