@@ -1,0 +1,42 @@
+HELP.md
+target/
+!.mvn
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+!/.mvn/
+/mvnw
+/volume/cache/machine.json
+/.mvn/wrapper/maven-wrapper.properties
+/volume/cache/server.test.pem
+/volume/cache/server.test.pem.crt
+/volume/cache/service-catalog-3_4_1_dev-1_34_108.pickle
+/volume/cache/server.test.pem.key
+/mvnw.cmd
